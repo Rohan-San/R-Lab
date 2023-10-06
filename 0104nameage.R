@@ -4,5 +4,6 @@
 x <- as.character(readline("Enter name: "))
 y <- as.integer(readline("Enter age: "))
 
-cat("Name is", x, "and age is", y, ".\n")
+print(paste("My name is", x, "and I am", y, "years old.\n"))
+print(sprintf("My name is %s and I am %d years old.\n", x, y))
 cat(R.version.string, "\n")

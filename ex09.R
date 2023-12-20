@@ -2,11 +2,11 @@ library(ggplot2)
 
 set.seed(123)
 
-num_students <- 15 
+num_students <- 8
 students <- data.frame(
-  Name = paste("Student", 1:num_students),
-  Scores = sample(60:100, num_students, replace = TRUE), 
-  Attendance =sample(60:100, num_students, replace = TRUE)
+  Name = c("Ramesh","Suresh","Mukesh","Rakesh","Dharmesh","Kamlesh","Hitesh","Sarvesh"),
+  Scores = c(98,74,28,76,81,69,92,13), 
+  Attendance = c(100,85,73,28,94,58,96,89)
 )
 
 scatter_plot <- ggplot(students, aes(x =Scores, y = Attendance)) + geom_point(color = "red") + 
@@ -22,9 +22,8 @@ line_plot <- ggplot(students, aes(x = Time, y = Scores, group = 1)) + geom_line(
   labs(title = "Line Plot - Trend of Scores Over Time", x = "Time", y = "Scores")
 
 histogram_plot <- ggplot(students, aes(x = Scores)) +
-  geom_histogram(binwidth = 10, position = "identity", color = "brown") +
-  scale_fill_brewer(palette = "Set3") + # Choose a color palette
-  
+  geom_histogram(binwidth = 5, position = "identity", color = "cyan", fill = "darkgreen") +
+  scale_fill_brewer(palette = "Set3") +
   labs(title = "Distribution of Scores", x = "Scores", y = "Frequency")
 
 print(histogram_plot)

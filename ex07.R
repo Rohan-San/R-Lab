@@ -23,9 +23,11 @@ cat("1st Quartile of Purchase Amounts:", q1_purchase, "\n")
 cat("3rd Quartile of Purchase Amounts:", q3_purchase, "\n")
 
 # Create a histogram
-ggplot(purchase_data, aes(x = PurchaseAmount)) +
-geom_histogram(binwidth = 50, fill = "blue", color = "black") +
-labs(title = "Distribution of Purchase Amounts", x = "Purchase Amount", y = "Frequency")
+hist <- ggplot(purchase_data, aes(x = PurchaseAmount)) +
+  geom_histogram(binwidth = 50, fill = "blue", color = "black") +
+  labs(title = "Distribution of Purchase Amounts", x = "Purchase Amount", y = "Frequency")
+
+print(hist)
 
 # Output:
 # Mean Purchase Amount: 170 
@@ -33,4 +35,4 @@ labs(title = "Distribution of Purchase Amounts", x = "Purchase Amount", y = "Fre
 # Standard Deviation of Purchase Amounts: 84.85281 
 # 1st Quartile of Purchase Amounts: 120 
 # 3rd Quartile of Purchase Amounts: 200 
-# Couldn't generate graph for some reason, trying to fix that. Pls help
+# Graph attached in README.md

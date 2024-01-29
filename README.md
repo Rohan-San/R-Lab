@@ -7,3 +7,6 @@ Repository to maintain R Lab code
 
 8.
 ![3a46d59d-10a6-421b-89d4-b956f8b87530](https://github.com/Rohan-San/R-Lab/assets/107957865/7c3603d4-172a-48ce-a8a0-b050c7c57a77)
+
+9.
+![36735262-e096-43c8-b282-ffeb70452963](https://github.com/Rohan-San/R-Lab/assets/107957865/ac149711-d4ba-47ca-9ea0-740b6458447a)
